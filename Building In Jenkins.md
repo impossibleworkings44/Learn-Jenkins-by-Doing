@@ -1,0 +1,19 @@
+### Scenario
+```
+You have installed Jenkins, but you want to be sure that the installation is working before you present it to your boss. You have decided that the best way to do this is to have Jenkins run a project that outputs the version of Linux that it is running on and the user that is running the build. You are going to place this output in a file called user_test.txt within a folder named test.
+
+Lab Setup
+
+Access the Jenkins environment by copying the public IP address provided with the lab credentials. Then, in a browser window, navigate to that IP address using
+
+http://<public IP address>:8080
+When prompted, log in to Jenkins with the username student and the password OmgPassword!
+
+The command that is needed for the shell portion of this lab is:
+
+uname -a && whoami > user_test.txt
+```
+- [x] From the Jenkins dashboard, create a folder named Test
+  - new Item -> choose folder and name the folder as test
+- [x] Create and Run a User Test Job That Saves Its Output in a File Named user_test.txt
+   - create a new job or new item and choose freestyle project and in build steps choose excute shell and add the command above and create a build
